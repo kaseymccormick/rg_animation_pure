@@ -33,8 +33,7 @@ var graphic = document.getElementsByClassName('the_machine')[0];
   //    Animations
   //--------------------------------------------
   //handle and water droplet change repeats to -1
-    TweenLite.to(bag, 1, {y:-440});
-    TweenLite.to(hook, 1, {y:-440});
+
 
     
   TweenMax.to(fHandle, 5, { repeat: 10, rotationY: 360, transformOrigin: "50% 50%", onComplete: console.log("Handle moved") });
@@ -72,7 +71,7 @@ function startBook(){
 
 function startBook2(){
   var tl = new TimelineLite();
-  tl.to(bookTwo, 2, {rotation: 55,x:-1, transformOrigin:"100% 100%"});
+  tl.to(bookTwo, 2, {rotation: 55,x:-1, transformOrigin:"100% 100%",onComplete: bagLift});
 }
 
 // function startPin(){
@@ -80,7 +79,8 @@ function startBook2(){
 //   tl.from(bowlingPin, 2,{rotation:40, transformOrigin:"100% 100%", yoyo: false });
 // }
 function bagLift(){
-  TwweenLight.to(bag, 1, {y:-100})
+  TweenLite.to(bag, 1, {y:-440});
+  TweenLite.to(hook, 1, {y:-440, onComplete: jacksGame});
 }
 function jacksGame(){
     TweenLite.to(bball, 2, { fill:"red", ease: Bounce.easeOut, y: 100 });
