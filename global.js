@@ -40,7 +40,7 @@ var graphic = document.getElementsByClassName('the_machine')[0];
 
   
   
-  TweenMax.to(magnet, 1, {repeat:10, x:5})
+  // TweenMax.to(magnet, 1, {repeat:10, x:5})
  //burner and steam
   TweenMax.to(burner, 3, {delay:6,repeat:3, fill:"red", yoyo: true, onComplete: startSteam});
   
