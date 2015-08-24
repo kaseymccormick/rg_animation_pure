@@ -48,7 +48,7 @@ var graphic = document.getElementsByClassName('the_machine')[0];
 }
 function startSteam(){
      
-      var tl = new TimelineMax({repeat: 5});
+      var tl = new TimelineMax({repeat: 5, onComplete: startParachute});
 
       tl.to(steam, 5, { y:-160, x:55, scale: 4, ease: Power1.easeInOut})
 
