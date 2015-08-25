@@ -1,0 +1,17 @@
+#droplet{
+  fill:blue;
+  background-color:red;
+}
+#ovenburner{
+  opacity:0;
+  fill:blue;
+}
+#steamCloud{
+  fill:blue;
+}
+#jacks, #morej, #lastj, #ball, #cursor{
+opacity:0;
+}
+#ball{
+  fill:red;
+}
