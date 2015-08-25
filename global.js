@@ -115,7 +115,7 @@ function dollyMove(){
   .to(dolly, .5, { rotation:50, transformOrigin:"50% 50%", yoyo:true, ease: Power0.easeNone})
   .to(box, 1, {rotation:90, x:80, y:-100, transformOrigin: "50% 50%"})
   .to(boxFlap, 1, {rotation:-30,transformOrigin:"0% 100%"})
-  .to(cursor,1, { rotation:180, x:60, y:60, opacity:1})
+  .to(cursor,1, { rotation:180, x:60, y:60})
   .to(cursor,1, { rotation:180, y:260})
   .to(cursor,1, { rotation:280, transfomOrigin:"50% 50%"})
   .to(cursor,1, { x:-260});
