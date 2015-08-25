@@ -102,7 +102,7 @@ function jacksGame(){
   TweenLite.to(tJacks, .8, { fill:"blue", y:500, x:-100, ease: Power0.easeInOut, onComplete: chairMove});
 }
 function chairMove(){
-  TweenLite.to(chair, 1, {x:-400});
+  TweenLite.to(chair, 3, {x:-400, oncomplete:dollyMove});
 }
   
 
