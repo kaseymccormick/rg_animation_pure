@@ -96,7 +96,7 @@ function bagLift(){
 }
   
 function jacksGame(){
-  TweenLite.to(bball, .5{opacity:1})
+  TweenLite.to(bball, .5, {opacity:1})
   TweenLite.to(bball, 6, {  ease: Bounce.easeOut, y: 500 });
   TweenLite.to(fJacks, .8, { fill:"blue", y:500,ease: Power0.easeInOut});
   TweenLite.to(sJacks, .8, { fill:"blue", y:500, x:25, ease: Power0.easeInOut});
