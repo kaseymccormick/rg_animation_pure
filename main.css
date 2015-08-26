@@ -1,3 +1,6 @@
+body {
+  font-family:"arial";
+}
 #oven{
   background-color:blue;
 }
@@ -9,4 +12,30 @@ opacity:0;
 }
 #ball{
   fill:red;
+}
+section.information {
+    width: 70%;
+    margin: 0px auto;
+    background-color: #E0F0F1;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: solid 1px #94AFB1;
+    margin-top: -40px;
+    z-index: 99;
+    top: 160px;
+    left: 130px;
+    position: absolute;
+    display:none;
+}
+
+.machine_FOM {
+    position: relative;
+    top: -100px;
+    right: -1070px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    border: solid 1px #94AFB1;
+    width: 10%;
+    text-align: center;
+    background-color: #E0F0F1;
 }
