@@ -1,10 +1,5 @@
-#droplet{
-  fill:blue;
-  background-color:red;
-}
-#ovenburner{
-  opacity:0;
-  fill:blue;
+#oven{
+  background-color:blue;
 }
 #steamCloud{
   fill:blue;
