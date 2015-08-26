@@ -54,7 +54,7 @@ window.onload = function (){
   TweenMax.to(burner, 3, {onStart: startSteam, delay:1,repeat:-1, fill:"red", yoyo: true});
   
   //trying to do hide jacks when click :/
-  graphicDoc.getElementById("jacks").addEventListener("click", keepScore);
+  var gamePeices = graphicDoc.getElementById("jacks").addEventListener("click", keepScore);
   // var jacks = document.getElementById("mostj").addEventListener("click", keepScore);
   // var jacks =document.getElementById("lastj").addEventListener("click", keepScore);
 }
@@ -130,5 +130,5 @@ function dollyMove(){
 }
 
 function keepScore() {
-  jacks.style.display = "none";
+  gamePeices.style.display = "none";
 }
