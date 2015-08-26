@@ -62,7 +62,7 @@ window.onload = function (){
 
 function startSteam(){
   //increase repeat?
-  var tl = new TimelineMax({repeat: 2, onComplete: startParachute});
+  var tl = new TimelineMax({repeat: 1, onComplete: startParachute});
 
   tl.to(steam, 1.5, { delay:2, y:-160, x:55,opacity:0, scale: 4, ease: Power1.easeInOut});
 
@@ -121,7 +121,7 @@ function dollyMove(){
   .to(dolly, .5, {repeat:1 , rotation:-35, transformOrigin:"50% 50%", y:20, yoyo:true, ease: Power0.easeNone})
   .to(dolly, .5, { rotation:50, transformOrigin:"50% 50%", yoyo:true, ease: Power0.easeNone})
   .to(box, 1, {rotation:90, x:80, y:-100, transformOrigin: "50% 50%"})
-  .to(boxFlap, 1, {rotation:-30,transformOrigin:"0% 100%"})
+  .to(boxFlap, 1, {rotation:-30,transformOrigin:"0% 100%", onComplete:console.log("flapmoved")})
   .to(cursor,1, { rotation:180, x:60, y:60})
   .to(cursor,1, { rotation:180, y:260})
   .to(cursor,1, { rotation:280, transfomOrigin:"50% 50%"})
