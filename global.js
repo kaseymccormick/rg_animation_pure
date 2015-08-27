@@ -44,7 +44,6 @@ window.onload = function (){
   cursor = graphicDoc.getElementById("cursor")
   
   gamePeices = graphicDoc.getElementById("jacks").addEventListener("click", keepScore);
-  information = document.getElementById("close").addEventListener("click", infoBox)
     
   //------------------------------------------
   //    Animations
@@ -136,3 +135,14 @@ function infoBox(){
 function keepScore() {
   gamePeices.style.display = "none";
 }
+function infoBox(){
+  // information = document.getElementById("close").addEventListener("click", infoBox)
+  
+  var list = document.getElementsByClassName("information")[0];
+  list.classList.toggle("show");
+  
+}
+
+var close_click = document.getElementsByClassName("close")[0];
+
+menu_button_click.onclick = infoBox;

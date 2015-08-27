@@ -1,6 +1,13 @@
 body {
   font-family:"arial";
 }
+/*.information{
+  display: none;
+}*/
+
+.information.show{
+  display: block;
+}
 #oven{
   background-color:blue;
 }
