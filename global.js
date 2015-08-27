@@ -135,14 +135,17 @@ function infoBox(){
 function keepScore() {
   gamePeices.style.display = "none";
 }
-function infoBox(){
-  // information = document.getElementById("close").addEventListener("click", infoBox)
-  
-  var list = document.getElementsByClassName("information")[0];
+
+
+function showInfo(){
+  var list = document.getElementsByClassName("inforamtion")[0];
   list.classList.toggle("show");
   
 }
 
+var FOM_click = document.getElementsByClassName("machine_FOM")[0];
 var close_click = document.getElementsByClassName("close")[0];
 
-close_click.onclick = infoBox;
+FOM_click.onclick = showInfo;
+close_click.onclick = showInfo
+
