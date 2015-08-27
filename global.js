@@ -141,7 +141,7 @@ function keepScore() {
 var graphic = document.getElementsByClassName('the_machine')[0];
 graphicDoc = graphic.contentDocument;
 
-var jack_pickup = graphicDoc.querySelectorAll("#jacks")
+var jack_pickup = graphicDoc.getElementById("jacks")
 jack_pickup.onclick = hideInfo;
 
 var close_click = document.getElementsByClassName("close")[0];
