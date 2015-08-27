@@ -136,7 +136,7 @@ function hideInfo(){
   information.style.display ="none";
 }
 function keepScore() {
-  gamePeices.style.display = "none";
+  fJacks.style.display = "none";
 }
 
 function toggle(x) {
