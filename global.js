@@ -138,14 +138,12 @@ function keepScore() {
 
 
 function showInfo(){
-  var list = document.getElementsByClassName("inforamtion")[0];
-  list.classList.toggle("show");
+  var list = document.getElementsByClassName("information")[0];
+  list.classList.toggleClass("show");
   
 }
 
-var FOM_click = document.getElementsByClassName("machine_FOM")[0];
 var close_click = document.getElementsByClassName("close")[0];
 
-FOM_click.onclick = showInfo;
-close_click.onclick = showInfo
+close_click.onclick = showInfo;
 

@@ -1,9 +1,9 @@
 body {
   font-family:"arial";
 }
-/*.information{
+.information{
   display: none;
-}*/
+}
 
 .information.show{
   display: block;
