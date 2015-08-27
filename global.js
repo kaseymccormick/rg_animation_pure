@@ -145,4 +145,4 @@ function infoBox(){
 
 var close_click = document.getElementsByClassName("close")[0];
 
-menu_button_click.onclick = infoBox;
+close_click.onclick = infoBox;
