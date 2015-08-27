@@ -126,24 +126,28 @@ function dollyMove(){
   .to(cursor,1, { rotation:180, x:60, y:60})
   .to(cursor,1, {  opacity:1, rotation:180, y:260})
   .to(cursor,1, { rotation:340, transfomOrigin:"50% 50%"})
-  .to(cursor,1, {  x:-260, onComplete:infoBox});
+  .to(cursor,1, {  x:-260, onComplete: showInfo});
   
 }
-function infoBox(){
+function showInfo(){
   information.style.display = "block";
+}
+function hideInfo(){
+  information.style.display ="none";
 }
 function keepScore() {
   gamePeices.style.display = "none";
 }
 
-
-function showInfo(){
-  var list = document.getElementsByClassName("information")[0];
-  list.classList.toggle("show");
-  
+function toggle(x) {
+	if (document.getElementById(x).style.display == 'none') {
+		document.getElementById(x).style.display = '';
+	} else {
+		document.getElementById(x).style.display = 'none';
+	}
 }
 
 var close_click = document.getElementsByClassName("close")[0];
 
-close_click.onclick = showInfo;
+close_click.onclick = hideInfo;
 
