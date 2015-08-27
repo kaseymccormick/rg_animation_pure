@@ -42,9 +42,7 @@ window.onload = function (){
   box = graphicDoc.getElementById("box")
   boxFlap = graphicDoc.getElementById("box_flap_open")
   cursor = graphicDoc.getElementById("cursor")
-  
-  // gamePeices = graphicDoc.getElementById("jacks").addEventListener("click", keepScore);
-    
+      
   //------------------------------------------
   //    Animations
   //--------------------------------------------
@@ -54,10 +52,6 @@ window.onload = function (){
 
  
   TweenMax.to(burner, 3, {onStart: startSteam, delay:1,repeat:-1, fill:"red", yoyo: true});
-  
-  //trying to do hide jacks when click :/
-  // var jacks = document.getElementById("mostj").addEventListener("click", keepScore);
-  // var jacks =document.getElementById("lastj").addEventListener("click", keepScore);
 }
 
 
@@ -135,14 +129,6 @@ function showInfo(){
 function hideInfo(){
   information.style.display ="none";
 }
-function keepScore() {
-  sJacks.style.display = "none";
-}
-var graphic = document.getElementsByClassName('the_machine')[0];
-graphicDoc = graphic.contentDocument;
-
-var jack_pickup = graphicDoc.getElementById("jacks")
-jack_pickup.onclick = hideInfo;
 
 var close_click = document.getElementsByClassName("close")[0];
 close_click.onclick = hideInfo;
