@@ -7,7 +7,7 @@ body {
 #steamCloud{
   fill:blue;
 }
-#jacks, #morej, #lastj, #ball, #cursor{
+#jacks, #mostj, #lastj, #ball, #cursor, #droplet{
 opacity:0;
 }
 #ball{
@@ -38,4 +38,8 @@ section.information {
     width: 10%;
     text-align: center;
     background-color: #E0F0F1;
+    z-index:-99;
+}
+#cursor{
+  fill:orange;
 }
