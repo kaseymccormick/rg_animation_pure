@@ -56,7 +56,7 @@ window.onload = function (){
   TweenMax.to(burner, 3, {onStart: startSteam, delay:1,repeat:-1, fill:"red", yoyo: true});
   
   //trying to do hide jacks when click :/
-  // var jacks = document.getElementById("mostj").addEventListener("click", keepScore);
+  var jacks = document.getElementById("mostj").addEventListener("click", keepScore);
   // var jacks =document.getElementById("lastj").addEventListener("click", keepScore);
 }
 
@@ -148,6 +148,5 @@ function toggle(x) {
 }
 
 var close_click = document.getElementsByClassName("close")[0];
-
 close_click.onclick = hideInfo;
 
