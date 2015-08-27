@@ -138,8 +138,10 @@ function hideInfo(){
 function keepScore() {
   sJacks.style.display = "none";
 }
+var graphic = document.getElementsByClassName('the_machine')[0];
+graphicDoc = graphic.contentDocument;
 
-var jack_pickup = graphicDoc.querySelectorAll("#mostj")
+var jack_pickup = graphicDoc.querySelectorAll("#jacks")
 jack_pickup.onclick = hideInfo;
 var close_click = document.getElementsByClassName("close")[0];
 close_click.onclick = hideInfo;
