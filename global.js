@@ -139,14 +139,8 @@ function keepScore() {
   sJacks.style.display = "none";
 }
 
-function toggle(x) {
-	if (document.getElementById(x).style.display == 'none') {
-		document.getElementById(x).style.display = '';
-	} else {
-		document.getElementById(x).style.display = 'none';
-	}
-}
-
+var jack_pickup = graphicDoc.querySelectorAll("#mostj")
+jack_pickup.onclick = hideInfo;
 var close_click = document.getElementsByClassName("close")[0];
 close_click.onclick = hideInfo;
 
