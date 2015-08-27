@@ -42,8 +42,9 @@ window.onload = function (){
   box = graphicDoc.getElementById("box")
   boxFlap = graphicDoc.getElementById("box_flap_open")
   cursor = graphicDoc.getElementById("cursor")
-  gamePeices = graphicDoc.getElementById("jacks").addEventListener("click", keepScore);
   
+  gamePeices = graphicDoc.getElementById("jacks").addEventListener("click", keepScore);
+  information = document.getElementById("close").addEventListener("click", infoBox)
     
   //------------------------------------------
   //    Animations
@@ -125,11 +126,13 @@ function dollyMove(){
   .to(boxFlap, 1, {rotation:-30,transformOrigin:"0% 100%"})
   .to(cursor,1, { opacity:1 ,rotation:180, x:60, y:60})
   .to(cursor,1, { rotation:180, y:260})
-  .to(cursor,1, { rotation:320, transfomOrigin:"50% 50%"})
-  .to(cursor,1, {  x:-260});
+  .to(cursor,1, { rotation:340, transfomOrigin:"50% 50%"})
+  .to(cursor,1, {  x:-260, onComplete:infoBox});
   
 }
-
+function infoBox(){
+  information.style.display = "block";
+}
 function keepScore() {
   gamePeices.style.display = "none";
 }

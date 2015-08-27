@@ -8,27 +8,50 @@ body {
   fill:blue;
 }
 #jacks, #mostj, #lastj, #ball, #cursor, #droplet{
-opacity:0;
+  opacity:0;
 }
 #ball{
   fill:red;
 }
 section.information {
-    width: 70%;
-    margin: 0px auto;
-    background-color: #E0F0F1;
-    padding: 10px 20px;
-    border-radius: 15px;
-    border: solid 1px #94AFB1;
-    margin-top: -40px;
-    z-index: 99;
-    top: 160px;
-    left: 130px;
+  width: 65%;
+  margin: 0px auto;
+  background-color: #E0F0F1;
+  padding: 25px 50px;
+  border-radius: 15px;
+  border: solid 1px #94AFB1;
+  margin-top: -40px;
+  z-index: 99;
+  top: 160px;
+  left: 130px;
+  position: absolute;
+  /*    display:none;
+  */}
+  note{
+    font-size:8px;
+  }
+  a {
+    opacity: 0.4;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color:blue;
+    text-decoration:underline;
+  }
+  .close h1 {
     position: absolute;
-    display:none;
-}
-
-.machine_FOM {
+    top: -12px;
+    right: 16px;
+    border: 1px solid #94AFB1;
+    border-radius: 100px;
+    padding: 2px 10px;
+    color: white;
+    background-color: #94AFB1;
+    opacity: .5;
+    font-weight: 100;
+  }
+  .machine_FOM {
     position: relative;
     top: -100px;
     right: -1070px;
@@ -39,4 +62,4 @@ section.information {
     text-align: center;
     background-color: #E0F0F1;
     z-index:-99;
-}
+  }
