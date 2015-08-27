@@ -7,7 +7,7 @@ body {
 #steamCloud{
   fill:blue;
 }
-#mostj, #lastj, #ball, #cursor, #droplet{
+#jack, #mostj, #lastj, #ball, #cursor, #droplet{
 opacity:0;
 }
 #ball{

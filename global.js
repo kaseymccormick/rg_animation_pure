@@ -31,7 +31,7 @@ window.onload = function (){
   bag = graphicDoc.getElementById("bag")
     
   bball = graphicDoc.getElementById("ball")
-  fJacks = graphicDoc.querySelectorAll("#jacks")
+  fJacks = graphicDoc.querySelectorAll("#jack")
   sJacks = graphicDoc.querySelectorAll("#mostj")
   tJacks = graphicDoc.querySelectorAll("#lastj")
     
