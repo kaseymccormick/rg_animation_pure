@@ -106,9 +106,9 @@ function bagLift(){
   
 function jacksGame(){
   TweenLite.to(bball, 6, { opacity:1,  ease: Bounce.easeOut, y: 500 });
-  TweenLite.to(fJacks, 1, { fill:"blue", y:500,ease: Power0.easeInOut});
-  TweenLite.to(sJacks, 1, { fill:"blue", y:500, x:25, ease: Power0.easeInOut});
-  TweenLite.to(tJacks, 1, { fill:"blue", y:500, x:-100, ease: Power0.easeInOut, onComplete: chairMove});
+  TweenLite.to(fJacks, 1, { opacity:1,fill:"blue", y:500,ease: Power0.easeInOut});
+  TweenLite.to(sJacks, 1, {  opacity:1, fill:"blue", y:500, x:25, ease: Power0.easeInOut});
+  TweenLite.to(tJacks, 1, { fill:"blue",opacity:1, y:500, x:-100, ease: Power0.easeInOut, onComplete: chairMove});
 }
 function chairMove(){
   TweenLite.to(chair, 1, {x:-290, onStart: dollyMove});
@@ -123,7 +123,7 @@ function dollyMove(){
   .to(dolly, .5, { rotation:50, transformOrigin:"50% 50%", yoyo:true, ease: Power0.easeNone})
   .to(box, 1, {rotation:90, x:80, y:-100, transformOrigin: "50% 50%"})
   .to(boxFlap, 1, {rotation:-30,transformOrigin:"0% 100%"})
-  .to(cursor,1, { opacity:1,rotation:180, x:60, y:60})
+  .to(cursor,1, { opacity:1 ,rotation:180, x:60, y:60})
   .to(cursor,1, { rotation:180, y:260})
   .to(cursor,1, { rotation:280, transfomOrigin:"50% 50%"})
   .to(cursor,1, { x:-260});
