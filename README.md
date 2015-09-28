@@ -21,4 +21,4 @@ I brainstormed the items that I wanted to animate and then the goal of the anima
 
 I then took these peices and organized a machine to animate.
 
-It can be viewed [here] ( http://kaseymccormick.github.io/rg_animation_pure.)
+It can be viewed [here] ( http://kaseymccormick.github.io/rg_animation_pure/)
