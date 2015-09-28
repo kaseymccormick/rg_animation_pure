@@ -20,3 +20,5 @@ I brainstormed the items that I wanted to animate and then the goal of the anima
  - Box by Dirk Uys
 
 I then took these peices and organized a machine to animate.
+
+It can be viewed [here] ( http://kaseymccormick.github.io/rg_animation_pure.)
